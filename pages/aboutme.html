@@ -4,80 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="../media/img/logo.png">
     <script src="https://kit.fontawesome.com/266ba5adca.js" crossorigin="anonymous"></script>
     <title>About me</title>
 </head>
 <body>
-    <header class="contact">
-        <img src="../media/img/logo.png" id="fg" alt="logo FG" width="10%">
-        <div class="nav bar">
-            <ul>
-                <li><a href="../index.html">Home</a></li>            
-                <li><a href="./projects.html">My Portfolio</a></li>
-                <li><a href="./skills.html">Skills</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <section>
-            <div class="me">
-                <h2>Code</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Natus perferendis tenetur modi, doloremque laboriosam impedit.
-                </p>
+    <!--=========== HEADER ===========-->
+    <header class="header" id="header">
+        <nav class="nav_container">
+            <a href="../index.html" class="nav_logo">
                 <i class="fa-solid fa-code"></i>
+                Fran
+            </a>    
+
+            <div class="nav_menu" id="nav-menu"> 
+                <a href="../index.html" class="nav_link">Home</a>
+                <a href="./projects.html" class="nav_link">My Portfolio</a>
+                <a href="./skills.html" class="nav_link">Skills</a>
+                <a href="./contact.html" class="nav_link">Contact</a>
+            
+
+                <div class="nav_close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
             </div>
-            <div class="card_me">
-                <h2>Graduation</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Natus perferendis tenetur modi, doloremque laboriosam impedit.
-                </p>
-                <i class="fa-solid fa-graduation-cap"></i>
+
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="me">
-                <h2>Me</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Natus perferendis tenetur modi, doloremque laboriosam impedit.
-                </p>
-                <i class="fa-solid fa-child"></i>
+        </nav>
+    </header>
+    <main class="main_about">
+        <section class="about">
+            <h2>About me</h2>
+            <div class="aboutme">
+                <div class="me">
+                    <h2>Code</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Natus perferendis tenetur modi, doloremque laboriosam impedit.
+                    </p>
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="me">
+                    <h2>Graduation</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Natus perferendis tenetur modi, doloremque laboriosam impedit.
+                    </p>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="me">
+                    <h2>Me</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Natus perferendis tenetur modi, doloremque laboriosam impedit.
+                    </p>
+                    <i class="fa-solid fa-child"></i>
+                </div>
             </div>
         </section>
-        <hr>
-        <section>
-            <h2>People who motivate me</h2>
-            <article class="card_motivating">
-                <a href="https://www.youtube.com/c/HolaMundoDev" target="_blank"><img src="../media/img/holamundo.jpg" alt="logo HolaMundo" width="12%"></a>
-                <h3>HolaMundo</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/iUrFW4JTv3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </article>
-            <article class="card_motivating">
-                <a href="https://www.coderhouse.com" target="_blank"><img src="../media/img/coder.png" alt="logo CoderHouse" width="12%"></a>
-                <h3>CoderHouse</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4w16Vqv_X-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </article>
-        </section>
-        
     </main>
     <footer>
-        <div class="social">
-            <h3>My Social Media</h3>
-            <a href="#">
-                <i class="fa-brands fa-linkedin fa-xl"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-github fa-xl"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-facebook-square fa-xl"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-twitch fa-xl"></i>
-            </a>         
+        <div class="card">
+            <div class="social">
+                <h3 class="social_media">My Social Media</h3>
+                <div class="icons_list">
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin fa-xl"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-github fa-xl"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-square fa-xl"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitch fa-xl"></i>
+                    </a>   
+                </div>      
+            </div>
+            <a href="#home" class="up" id="up"><i class="fa-solid fa-arrow-up fa-xl"></i></a>
         </div>
-        <a href="#fg">Go up</a>
-        <h4>@Francisco Gutierrez 2022</h3>
+        <h4 class="footer_final">@Francisco Gutierrez 2022</h3>
     </footer>
+    <script src="./main.js"></script>
 </body>
 </html>

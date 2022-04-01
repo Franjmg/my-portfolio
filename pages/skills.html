@@ -4,68 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="../media/img/logo.png">
     <script src="https://kit.fontawesome.com/266ba5adca.js" crossorigin="anonymous"></script>
     <title>Skills</title>
 </head>
 <body>
-    <header>
-        <img src="../media/img/logo.png" id="fg" alt="logo FG" width="10%">
-        <div class="nav">
-            <ul>
-                <li><a href="../index.html">Home</a></li>   
-                <li><a href="./projects.html">My Portfolio</a></li>         
-                <li><a href="./aboutme.html">About me</a></li>                
-                <li><a href="./contact.html">Contact me</a></li>
-            </ul>
-        </div>
+    <header class="header" id="header">
+        <nav class="nav_container">
+            <a href="../index.html" class="nav_logo">
+                <i class="fa-solid fa-code"></i>
+                Fran
+            </a>    
+
+            <div class="nav_menu" id="nav-menu"> 
+                <a href="../index.html" class="nav_link">Home</a>
+                <a href="./projects.html" class="nav_link">My Portfolio</a>
+                <a href="./aboutme.html" class="nav_link">About me</a>
+                <a href="./contact.html" class="nav_link">Contact</a>
+            
+
+                <div class="nav_close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
     </header>
-    <main>
-        <h2>Skills</h2>
+    <main class="main_skill grid">
         <div class="skills-links">
-            <a href="#">
-                <i class="fa-brands fa-html5 fa-2xl"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-git-alt fa-2xl"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-css3 fa-2xl"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-linux fa-2xl"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-js fa-2xl"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-java fa-2xl"></i>
-            </a>
-            <a href="">
-                <i class="fa-brands fa-react fa-2xl"></i>
-            </a>
+            <h2 class="title_skill">Skills</h2>
+            <div class="icons_skills">
+                <a href="#" class="link_skill">
+                    <i class="fa-brands fa-html5 fa-2xl"></i>
+                </a>
+                <a href="#" class="link_skill">
+                    <i class="fa-brands fa-git-alt fa-2xl"></i>
+                </a>
+                <a href="#" class="link_skill">
+                    <i class="fa-brands fa-css3 fa-2xl"></i>
+                </a>
+                <a href="#" class="link_skill">
+                    <i class="fa-brands fa-linux fa-2xl"></i>
+                </a>
+                <a href="#" class="link_skill">
+                    <i class="fa-brands fa-js fa-2xl"></i>
+                </a>
+                <a href="#" class="link_skill">
+                    <i class="fa-brands fa-java fa-2xl"></i>
+                </a>
+                <a href="" class="link_skill">
+                    <i class="fa-brands fa-react fa-2xl"></i>
+                </a>
+            </div>
         </div>
-        <h2>Path</h2>
-        <video src="../media/video/frontend.mp4" width="300px"  controls></video>
+        <div class="path_skills">
+            <h2>Path</h2>
+            <video src="../media/video/frontend.mp4" width="300px"  controls></video>
+        </div>
+        
     </main>
     <footer>
-        <div class="social">
-            <h3>My Social Media</h3>
-            <a href="#">
-                <i class="fa-brands fa-linkedin fa-xl"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-github fa-xl"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-facebook-square fa-xl"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-twitch fa-xl"></i>
-            </a>         
+        <div class="card">
+            <div class="social">
+                <h3 class="social_media">My Social Media</h3>
+                <div class="icons_list">
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin fa-xl"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-github fa-xl"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-square fa-xl"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitch fa-xl"></i>
+                    </a>   
+                </div>      
+            </div>
+            <a href="#home" class="up" id="up"><i class="fa-solid fa-arrow-up fa-xl"></i></a>
         </div>
-        <a href="#fg">Go up</a>
-        <h4>@Francisco Gutierrez 2022</h3>
+        <h4 class="footer_final">@Francisco Gutierrez 2022</h3>
     </footer>
+    <script src="./main.js"></script>
 </body>
 </html>
