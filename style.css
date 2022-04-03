@@ -319,11 +319,10 @@ span{
 }
 
 .projects{
-    width: 85vw;
-    height: 50vh;
+    width: 90%;
     padding: 2rem 0;
-    margin: 0 auto;
-    grid-template-columns: auto auto auto;
+    margin: 1rem auto;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
 }
