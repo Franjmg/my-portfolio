@@ -348,16 +348,19 @@ span{
 }
 
 .btns{
-    margin-top: .75rem;
-    padding: .3rem .5rem;
+    padding: .4rem .8rem;
+    margin: .5rem;
+    outline: none;
+    border: 2px solid;
     border-radius: .5rem;
-    background-color: var(--white-color);
-    color: var(--body-color);
+    background-color: var(--body-color);
+    color: var(--first-color-alt);
+    font-weight: var(--font-semi-bold);
 }
 
 .btns:hover{
-    background-color: var(--first-color);
-    color: var(--white-color);
+    background-color: var(--first-color-alt);
+    color: var(--body-color);
 }
 
 /*========== ABOUT ME ==========*/
