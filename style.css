@@ -320,8 +320,7 @@ span{
 
 .projects{
     width: 90%;
-    padding: 2rem 0;
-    margin: 1rem auto;
+    margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
@@ -332,15 +331,48 @@ span{
 }
 
 .project_card{
-    min-height: 15rem;
-    border: 2px solid;
-    border-radius: 1rem;
     border-color: var(--white-color);
     display: flex;
     flex-direction: column;
     row-gap: .75rem;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+}
+
+.projects figure{
+    position: relative;
+    width: 100%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.projects figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.projects figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
 }
 
 .project_card ul{
