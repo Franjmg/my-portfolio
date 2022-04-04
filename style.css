@@ -139,7 +139,7 @@ header{
 }
 
 .nav_container{
-    width: 95vw;
+    padding: 0 1.2rem;
     margin: 0 auto;
     height: var(--header-height);
     display: flex;
