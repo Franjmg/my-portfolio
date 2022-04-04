@@ -447,8 +447,7 @@ span{
 }
 /*========== CONTACT ==========*/
 .main_form{
-    width: 100%;
-    height: calc(100vh- 4rem);
+    width: 100vw;
     padding-top: 4rem;
     display: flex;
     flex-direction: column;
@@ -456,8 +455,14 @@ span{
     align-items: center;
 }
 
+.form{
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
 .help_container{
-    padding-top: 4rem;
+    padding: 4rem 1rem 2rem;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     flex-direction: column;
