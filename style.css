@@ -139,7 +139,7 @@ header{
 }
 
 .nav_container{
-    padding: 0 1.2rem;
+    width: 95vw;
     margin: 0 auto;
     height: var(--header-height);
     display: flex;
@@ -404,7 +404,7 @@ span{
 }
 
 .aboutme{
-    /* padding: 2rem; */
+    padding: 2rem;
     display: flex;
     justify-content: center;
 }
