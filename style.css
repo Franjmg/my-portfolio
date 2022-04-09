@@ -315,13 +315,13 @@ span{
 .projects_section{
     width: 100vw;
     position: relative;
-    padding-top: 5rem;
+    padding: 5rem 1.5em 2em;
 }
 
 .projects{
     width: 90%;
     margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
 }
@@ -398,7 +398,6 @@ span{
 /*========== ABOUT ME ==========*/
 .about{
     width: 100vw;
-    height: 60vh;
     padding-top: 7rem;
     text-align: center;
 }
@@ -406,21 +405,33 @@ span{
 .aboutme{
     padding: 2rem;
     display: flex;
+    flex-direction: column;
+    row-gap: 2em;
     justify-content: center;
 }
 
 .me{
-    line-height: 28px;
+    line-height: 40px;
     padding-inline: 2rem;
+}
+
+.me p{
+    padding: 1.5em;
+    color: var(--white-color);
+}
+
+.me i{
+    font-size: 2em;
+    color: var(--first-color);
 }
 
 /*========== SKILLS ==========*/
 .main_skill{
     width: 100vw;
-    padding-top: 5.4rem;
-    grid-template-columns: auto auto;
+    padding: 5.4rem 0 2em;
+    grid-template-rows: auto auto;
     justify-content: center;
-    column-gap: 5rem;
+    row-gap: 3rem;
     text-align: center;
 }
 
@@ -548,6 +559,20 @@ span{
     .home_img{
         width: 300px;
         border-radius: 50%;
+    }
+
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main_skill{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .aboutme{
+        flex-direction: row;
+        column-gap: 2em;
+        margin-inline: 1.8em;
     }
 }
 
