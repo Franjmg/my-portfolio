@@ -35,11 +35,5 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
-
-/* TESTIMONIAL SWIPER */
-
-
-/* NEW SWIPER */
-
-
+w
 
