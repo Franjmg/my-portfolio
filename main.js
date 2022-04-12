@@ -35,5 +35,4 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
-w
 
