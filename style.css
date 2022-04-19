@@ -66,6 +66,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  hsla(219, 33%, 32%, .5) 0.1%, hsl(219, 4%, 4%) 99.8% );
 }
 
 h1, h2, h3{
@@ -463,6 +464,10 @@ span{
     border-radius: .75em;
 }
 
+.link_skill:hover{
+    transform: scale(1.2,1.2);
+}
+
 .link_skill i{
     font-size: 40px;
     padding: .25em;
@@ -613,6 +618,7 @@ footer{
     align-self: flex-end;
     color: #fff;
     border-radius: 1rem 1rem 0 0;
+    background-color: var(--body-color);
 }
 
 .card{
