@@ -61,12 +61,16 @@ html{
 body{
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    background-color: var(--body-color);
+    /* background-color: var(--body-color); */
     color: var(--text-color);
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  hsla(219, 33%, 32%, .5) 0.1%, hsl(219, 4%, 4%) 99.8% );
+    background-image: url(./media/img/bg-home-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  hsla(219, 33%, 32%, .5) 0.1%, hsl(219, 4%, 4%) 99.8% ); */
 }
 
 h1, h2, h3{
@@ -76,7 +80,9 @@ h1, h2, h3{
 
 a{
     text-decoration: none;
-    color: #000;
+    font-weight: 500;
+    transition: all 0 ease;
+    color: var(--text-color-light);
 }
 
 img{
@@ -223,9 +229,21 @@ header{
 
 /*========== MAIN ==========*/
 /*========== HOME ==========*/
+/* .home_sec{
+    background-image: url(./media/img/bg-home-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+} */
+.home .section{
+    background-image: url(./media/img/bg-home-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 .home{
     width: 100vw;
-    height: calc(100vh - 4.5rem);
+    /* height: calc(100vh - 4.5rem); */
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -627,14 +645,15 @@ footer{
 
 .footer-bottom{
     padding: 30px 0 20px;
-    border-top: 1px solid #ffc107;
+    border-top: 1px solid var(--first-color-alt);
 }
 
-.social_media{
-    font-size: var(--normal-font-size);
+.social-icons a{
+    font-size: 24px;
+    color: var(--white-color);
+    padding: 3px;
 }
 
-.up i{
+.social-icons a:hover{
     color: var(--first-color-alt);
 }
-
