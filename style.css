@@ -85,7 +85,7 @@ img{
 }
 
 /*========== REUSABLE CSS CLASSES ==========*/
-.container{
+.conteiner{
     max-width: 1024px;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
@@ -139,7 +139,7 @@ header{
     z-index: var(--z-fixed);
 }
 
-.nav_container{
+.nav_conteiner{
     width: 95vw;
     margin: 0 auto;
     height: var(--header-height);
@@ -230,7 +230,7 @@ header{
     overflow: hidden;
 }
 
-.home_container{
+.home_conteiner{
     position: relative;
     padding-top: 4rem;
     row-gap: 3rem;
@@ -490,7 +490,7 @@ span{
     margin: 0 auto;
 }
 
-.help_container{
+.help_conteiner{
     padding: 4rem 1rem 2rem;
     margin: 0 auto;
     display: flex;
@@ -499,7 +499,7 @@ span{
     row-gap: 2rem;
 }
 
-.help_container i{
+.help_conteiner i{
     display: inline-block;
 	text-shadow: 0 0 10px #222,1px 1px  0 #450505;
 	color: red;
@@ -523,7 +523,7 @@ span{
     padding: 1.5rem;
 }
 
-.btn_container{
+.btn_conteiner{
     display: flex;
     justify-content: flex-end;
     column-gap: 2rem;
@@ -565,7 +565,7 @@ span{
         text-transform: initial;
     }
 
-    .home_container{
+    .home_conteiner{
         width: 100vw;
         height: 65vh;
         grid-template-columns: auto auto;
@@ -611,26 +611,23 @@ span{
 
 /*========== FOOTER ==========*/
 footer{
-    width: 100%;
-    height: 4.5rem;
-    margin: 0 auto;
-    padding: 0 2rem;
+    width: 100vw;
     align-self: flex-end;
-    color: #fff;
     border-radius: 1rem 1rem 0 0;
     background-color: var(--body-color);
 }
 
-.card{
-    height: 75%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.footer-top{
+    padding: 80px 0 30px;
 }
 
-.social{
-    display: flex;
+/* .row{
+    width: 95vw;
+} */
+
+.footer-bottom{
+    padding: 30px 0 20px;
+    border-top: 1px solid #ffc107;
 }
 
 .social_media{
@@ -639,24 +636,5 @@ footer{
 
 .up i{
     color: var(--first-color-alt);
-}
-
-.icons_list{
-    width: 12em;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.icons_list i{
-    color: var(--first-color);
-}
-
-.icons_list i:hover{
-    color: var(--white-color);
-}
-
-.footer_final{
-    font-size: var(--smalller-font-size);
-    text-align: center;
 }
 
