@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&family=Hind:wght@300;500&display=swap');
+@import '_aboutme.scss';
 
 /*========== VARIABLES CSS ==========*/
 :root{
@@ -65,7 +66,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
-    background-image: url(../media/img/bg-home-desktop.jpg);
+    background-image: url(../media/img/Meteor.svg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -227,17 +228,6 @@ header{
 
 /*========== MAIN ==========*/
 /*========== HOME ==========*/
-/* .home_sec{
-    background-image: url(./media/img/bg-home-desktop.jpg);
-    background-position: center;
-    background-size: cover;
-} */
-.home .section{
-    background-image: url(./media/img/bg-home-desktop.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
 .home{
     width: 100vw;
     /* height: calc(100vh - 4.5rem); */
@@ -410,36 +400,6 @@ span{
 .btns:hover{
     background-color: var(--first-color-alt);
     color: var(--body-color);
-}
-
-/*========== ABOUT ME ==========*/
-.about{
-    width: 100vw;
-    padding-top: 7rem;
-    text-align: center;
-}
-
-.aboutme{
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: 2em;
-    justify-content: center;
-}
-
-.me{
-    line-height: 40px;
-    padding-inline: 2rem;
-}
-
-.me p{
-    padding: 1.5em;
-    color: var(--white-color);
-}
-
-.me i{
-    font-size: 2em;
-    color: var(--first-color);
 }
 
 /*========== SKILLS ==========*/

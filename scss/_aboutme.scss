@@ -1,0 +1,35 @@
+@import 'base/_variables';
+/*========== ABOUT ME ==========*/
+.about{
+    width: 100vw;
+    height: 90vh;
+    padding-top: 7rem;
+    text-align: center;
+}
+
+.aboutme{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    justify-content: center;
+}
+
+.me{
+    line-height: 40px;
+    padding-inline: 2rem;
+
+    &:hover{
+        transform: scale(1.2,1.2);
+    }
+    
+    p{
+        padding: 1.5em;
+        color: $white-color;
+    }
+
+    i{
+        font-size: 2em;
+        color: $first-color;
+    }
+}
