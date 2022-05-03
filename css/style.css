@@ -1,79 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&family=Hind:wght@300;500&display=swap");
-/*========== VARIABLES CSS ==========*/
-/*========== ABOUT ME ==========*/
-.about {
-  width: 100vw;
-  height: 90vh;
-  padding-top: 7rem;
-  text-align: center;
-}
-
-.aboutme {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  row-gap: 2em;
-  justify-content: center;
-}
-
-.me {
-  line-height: 40px;
-  padding-inline: 2rem;
-}
-.me:hover {
-  transform: scale(1.2, 1.2);
-}
-.me p {
-  padding: 1.5em;
-  color: #fff;
-}
-.me i {
-  font-size: 2em;
-  color: hsl(219deg, 69%, 56%);
-}
-
-/*========== VARIABLES CSS ==========*/
-:root {
-  --header-height: 4.5rem;
-  /* COLORS */
-  /* Color moder HSL(hue, saturation, lightness) */
-  --first-color: hsl(219, 69%, 56%);
-  --first-color-alt: hsl(219, 69%, 52%);
-  --title-color: hsl(219, 8%, 95%);
-  --text-color: hsl(219, 8%, 75%);
-  --text-color-light: hsl(219, 4%, 55%);
-  --white-color: #fff;
-  --body-color: hsl(219, 4%, 4%);
-  --conteiner-color: hsl(219, 4%, 7%);
-  /* Font and typografhy */
-  /* .5rem = 8px | 1rem = 16px... */
-  --body-font: "Exo", sans-serif;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .81rem;
-  --smalller-font-size: .75rem;
-  /* Font weight */
-  --font-medium: 500;
-  --font-semi-bold: 600;
-  /* z index */
-  --z-tooltip: 10;
-  --z-fixed: 100;
-}
-
-/* Responsive typography */
-@media screen and (min-width: 767px) {
-  :root {
-    --h1-font-size: 2.45rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smalller-font-size: .813rem;
-  }
-}
-/*========== BASE ==========*/
 * {
   margin: 0;
   padding: 0;
@@ -159,7 +84,7 @@ img {
 
 /*========== HEADER & NAV ==========*/
 header {
-  width: 100%;
+  width: 100vw;
   background-color: transparent;
   position: fixed;
   top: 0;
@@ -168,7 +93,7 @@ header {
 }
 
 .nav_conteiner {
-  width: 95vw;
+  width: 95%;
   margin: 0 auto;
   height: var(--header-height);
   display: flex;
@@ -188,11 +113,9 @@ header {
   font-weight: var(--font-medium);
   transition: 0.3s;
 }
-
 .nav_logo i {
   font-size: 1.25rem;
 }
-
 .nav_logo:hover {
   color: var(--first-color);
 }
@@ -205,7 +128,7 @@ header {
 @media screen and (max-width: 767px) {
   .nav_menu {
     position: fixed;
-    background-color: hsl(0deg, 0%, 100%);
+    background-color: hsla(0deg, 0%, 100%, 0.1);
     top: 0;
     right: -100%;
     width: 100%;
@@ -229,7 +152,6 @@ header {
   font-weight: var(--font-medium);
   transition: 0.3s;
 }
-
 .nav_link:hover {
   color: var(--first-color);
 }
@@ -248,7 +170,12 @@ header {
   right: 0;
 }
 
-/*========== MAIN ==========*/
+/* Change Background header */
+.scroll-header {
+  border-radius: 0 0 1rem 1rem;
+  background-color: var(--body-color);
+}
+
 /*========== HOME ==========*/
 .home {
   width: 100vw;
@@ -333,12 +260,6 @@ span {
   z-index: -1;
 }
 
-/* Change Background header */
-.scroll-header {
-  border-radius: 0 0 1rem 1rem;
-  background-color: var(--body-color);
-}
-
 /*========== PROJECTS ==========*/
 .projects_section {
   width: 100vw;
@@ -421,6 +342,37 @@ span {
 .btns:hover {
   background-color: var(--first-color-alt);
   color: var(--body-color);
+}
+
+/*========== ABOUT ME ==========*/
+.about {
+  width: 100vw;
+  padding-top: 7rem;
+  text-align: center;
+}
+
+.aboutme {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+  justify-content: center;
+}
+
+.me {
+  line-height: 40px;
+  padding-inline: 2rem;
+}
+.me:hover {
+  transform: scale(1.2, 1.2);
+}
+.me p {
+  padding: 1.5em;
+  color: #fff;
+}
+.me i {
+  font-size: 2em;
+  color: hsl(219deg, 69%, 56%);
 }
 
 /*========== SKILLS ==========*/
@@ -530,6 +482,77 @@ span {
   column-gap: 2rem;
 }
 
+/*========== FOOTER ==========*/
+footer {
+  width: 100%;
+  align-self: flex-end;
+  border-radius: 1rem 1rem 0 0;
+  background-color: var(--body-color);
+}
+
+.footer-top {
+  padding: 80px 0 30px;
+}
+
+/* .row{
+    width: 95vw;
+} */
+.footer-bottom {
+  padding: 30px 0 20px;
+  border-top: 1px solid var(--first-color-alt);
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: var(--white-color);
+  padding: 3px;
+}
+
+.social-icons a:hover {
+  color: var(--first-color-alt);
+}
+
+/*========== VARIABLES CSS ==========*/
+:root {
+  --header-height: 4.5rem;
+  /* COLORS */
+  /* Color moder HSL(hue, saturation, lightness) */
+  --first-color: hsl(219, 69%, 56%);
+  --first-color-alt: hsl(219, 69%, 52%);
+  --title-color: hsl(219, 8%, 95%);
+  --text-color: hsl(219, 8%, 75%);
+  --text-color-light: hsl(219, 4%, 55%);
+  --white-color: #fff;
+  --body-color: hsl(219, 4%, 4%);
+  --conteiner-color: hsl(219, 4%, 7%);
+  /* Font and typografhy */
+  /* .5rem = 8px | 1rem = 16px... */
+  --body-font: "Exo", sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .81rem;
+  --smalller-font-size: .75rem;
+  /* Font weight */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /* z index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 767px) {
+  :root {
+    --h1-font-size: 2.45rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smalller-font-size: .813rem;
+  }
+}
 /*========== BREAKPOINT ==========*/
 @media screen and (min-width: 767px) {
   .section {
@@ -567,7 +590,7 @@ span {
   }
 
   .home_conteiner {
-    width: 100vw;
+    width: 100%;
     height: 65vh;
     grid-template-columns: auto auto;
     justify-content: space-around;
@@ -608,35 +631,6 @@ span {
     column-gap: 2em;
     margin-inline: 1.8em;
   }
-}
-/*========== FOOTER ==========*/
-footer {
-  width: 100vw;
-  align-self: flex-end;
-  border-radius: 1rem 1rem 0 0;
-  background-color: var(--body-color);
-}
-
-.footer-top {
-  padding: 80px 0 30px;
-}
-
-/* .row{
-    width: 95vw;
-} */
-.footer-bottom {
-  padding: 30px 0 20px;
-  border-top: 1px solid var(--first-color-alt);
-}
-
-.social-icons a {
-  font-size: 24px;
-  color: var(--white-color);
-  padding: 3px;
-}
-
-.social-icons a:hover {
-  color: var(--first-color-alt);
 }
 
 /*# sourceMappingURL=style.css.map */

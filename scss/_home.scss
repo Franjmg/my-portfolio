@@ -1,0 +1,84 @@
+/*========== HOME ==========*/
+.home{
+    width: 100vw;
+    /* height: calc(100vh - 4.5rem); */
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.home_conteiner{
+    position: relative;
+    padding-top: 4rem;
+    row-gap: 3rem;
+}
+
+.home_data{
+    text-align: center;
+}
+
+.home_title{
+    font-size: var(--h1-font-size);
+    margin-bottom: 1rem;
+}
+
+span{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    margin: 0 auto;
+    width: 9ch;
+
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+
+@keyframes typing {
+    from {width: 0}
+}
+
+@keyframes blink {
+    50% {border-color: transparent}
+}
+
+
+.home_subtitle{
+    font-size: var(--h3-font-size);
+    margin-bottom: .25rem;
+}
+
+.home_web{
+    font-size: var(--small-font-size);
+    font-weight: 400;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+}
+
+.home_web i{
+    color: var(--first-color);
+}
+
+.home_img{
+    width: 280px;
+    justify-self: center;
+}
+
+.home .shape_big,
+.home .shape_small{
+    position: absolute;
+}
+
+.home .shape_big{
+    left: -1rem;
+    top: 3rem;
+    z-index: -1;
+}
+
+.home .shape_small{
+    right: -3rem;
+    bottom: 2rem;
+    z-index: -1;
+}

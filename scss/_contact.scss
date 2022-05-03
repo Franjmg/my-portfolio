@@ -1,0 +1,54 @@
+/*========== CONTACT ==========*/
+.main_form{
+    width: 100vw;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form{
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.help_conteiner{
+    padding: 4rem 1rem 2rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.help_conteiner i{
+    display: inline-block;
+	text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+	color: red;
+
+	animation: beat 1s infinite;
+	transform-origin: center;
+}
+
+@keyframes beat {
+    from { transform: none; }
+    50% { transform: scale(1.4); }
+    to { transform: none; }
+}
+
+.form{
+    line-height: 40px;
+}
+
+.field_form{
+    font-size: var(--normal-font-size);
+    padding: 1.5rem;
+}
+
+.btn_conteiner{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 2rem;
+}

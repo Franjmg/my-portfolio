@@ -1,0 +1,85 @@
+@import 'base/variables.scss';
+//========== BASE ==========
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background-image: url(../media/img/Meteor.svg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1, h2, h3{
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0 ease;
+    color: var(--text-color-light);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*========== REUSABLE CSS CLASSES ==========*/
+.conteiner{
+    max-width: 1024px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.section{
+    padding: 6rem 0 2rem;
+}
+
+
+.section_title{
+    font-size: var(--h2-font-size);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.main{
+    overflow: hidden;
+}
+
+.shape{
+    background-color: hsla(219, 33%, 32%, .5);
+    filter: blur(112px);
+    border-radius: 50%; 
+}
+
+.shape_big{
+    width: 400px;
+    height: 400px;
+}
+
+.shape_small{
+    width: 300px;
+    height: 300px;
+}
