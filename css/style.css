@@ -39,6 +39,10 @@ img {
   height: auto;
 }
 
+main {
+  width: 100%;
+}
+
 /*========== REUSABLE CSS CLASSES ==========*/
 .conteiner {
   max-width: 1024px;
@@ -178,8 +182,7 @@ header {
 
 /*========== HOME ==========*/
 .home {
-  width: 100vw;
-  /* height: calc(100vh - 4.5rem); */
+  width: 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
@@ -262,7 +265,7 @@ span {
 
 /*========== PROJECTS ==========*/
 .projects_section {
-  width: 100vw;
+  width: 100%;
   position: relative;
   padding: 5rem 1.5em 2em;
 }
@@ -398,7 +401,7 @@ span {
   padding: 0.5em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
+  place-items: center;
   row-gap: 1em;
   column-gap: 1em;
 }
@@ -590,7 +593,6 @@ footer {
   }
 
   .home_conteiner {
-    width: 100%;
     height: 65vh;
     grid-template-columns: auto auto;
     justify-content: space-around;
@@ -624,6 +626,10 @@ footer {
     font-size: 60px;
     padding: 0.45em;
     color: var(--first-color);
+  }
+
+  .about {
+    height: 90vh;
   }
 
   .aboutme {

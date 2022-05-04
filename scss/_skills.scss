@@ -21,7 +21,7 @@
     padding: .5em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
+    place-items: center;
     row-gap: 1em;
     column-gap: 1em;
 }
