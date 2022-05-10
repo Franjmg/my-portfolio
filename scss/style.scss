@@ -63,8 +63,13 @@
     }
 
     .home_data{
-        width: 270px;
+        width: 100%;
         text-align: left;
+
+        p{
+            width: 70%;
+            margin: .6em 0;
+        }
     }
 
     span{
@@ -94,10 +99,10 @@
 
     .home_conteiner{
         height: 65vh;
-        grid-template-columns: auto auto;
+        grid-template-columns: 60% 40%;
         justify-content: space-around;
         align-items: center;
-        z-index:-1;
+        gap: 0;
     }
 
     .home_img{
