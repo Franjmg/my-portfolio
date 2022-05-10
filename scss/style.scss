@@ -65,6 +65,7 @@
     .home_data{
         width: 100%;
         text-align: left;
+        margin-left: 1em;
 
         p{
             width: 70%;
@@ -102,7 +103,7 @@
         grid-template-columns: 60% 40%;
         justify-content: space-around;
         align-items: center;
-        gap: 0;
+        gap: 1em;
     }
 
     .home_img{
@@ -116,7 +117,7 @@
 
     .main_skill{
         grid-template-columns: repeat(2, 1fr);
-        margin: 0 4em;
+        padding-bottom: 3em;
     }
 
     .icons_skills{
