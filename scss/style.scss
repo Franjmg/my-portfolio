@@ -126,12 +126,12 @@
 
     .link_skill{
         width: 7em;
-    }
 
-    .link_skill i{
-        font-size: 60px;
-        padding: .45em;
-        color: var(--first-color);
+        i{
+            font-size: 60px;
+            padding: .45em;
+            color: var(--first-color);
+        }
     }
 
     .about{

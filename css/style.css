@@ -50,7 +50,7 @@ main {
   margin-left: 1.5rem;
 }
 
-.grid {
+.grid, .main_skill, .projects, .home_conteiner {
   display: grid;
   gap: 1.5rem;
   justify-content: center;
@@ -280,20 +280,9 @@ span {
   justify-content: center;
   align-items: center;
 }
-
-.titlepro, .projects figure .capa {
-  text-align: center;
+.projects ul {
+  list-style-type: none;
 }
-
-.project_card {
-  border-color: var(--white-color);
-  flex-direction: column;
-  row-gap: 0.75rem;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-}
-
 .projects figure {
   position: relative;
   width: 100%;
@@ -301,12 +290,10 @@ span {
   overflow: hidden;
   cursor: pointer;
 }
-
 .projects figure img {
   width: 100%;
   transition: all 500ms ease-out;
 }
-
 .projects figure .capa {
   position: absolute;
   top: 0;
@@ -322,14 +309,22 @@ span {
   justify-content: center;
   align-items: center;
 }
-
 .projects figure:hover > .capa {
   opacity: 1;
   visibility: visible;
 }
 
-.project_card ul {
-  list-style-type: none;
+.titlepro, .projects figure .capa {
+  text-align: center;
+}
+
+.project_card {
+  border-color: var(--white-color);
+  flex-direction: column;
+  row-gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
 }
 
 .btns {
@@ -342,7 +337,6 @@ span {
   color: var(--first-color-alt);
   font-weight: var(--font-semi-bold);
 }
-
 .btns:hover {
   background-color: var(--first-color-alt);
   color: var(--body-color);
@@ -416,11 +410,9 @@ span {
   background-color: var(--conteiner-color);
   border-radius: 0.75em;
 }
-
 .link_skill:hover {
   transform: scale(1.2, 1.2);
 }
-
 .link_skill i {
   font-size: 40px;
   padding: 0.25em;
@@ -441,6 +433,7 @@ span {
 .form {
   padding: 0 1rem;
   margin: 0 auto;
+  line-height: 40px;
 }
 
 .help_conteiner {
@@ -451,7 +444,6 @@ span {
   flex-direction: column;
   row-gap: 2rem;
 }
-
 .help_conteiner i {
   display: inline-block;
   text-shadow: 0 0 10px #222, 1px 1px 0 #450505;
@@ -471,10 +463,6 @@ span {
     transform: none;
   }
 }
-.form {
-  line-height: 40px;
-}
-
 .field_form {
   font-size: var(--normal-font-size);
   padding: 1.5rem;
@@ -508,7 +496,6 @@ footer {
   color: var(--white-color);
   padding: 3px;
 }
-
 .social-icons a:hover {
   color: var(--first-color-alt);
 }
@@ -624,7 +611,6 @@ footer {
   .link_skill {
     width: 7em;
   }
-
   .link_skill i {
     font-size: 60px;
     padding: 0.45em;

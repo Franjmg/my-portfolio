@@ -12,6 +12,7 @@
 .form{
     padding: 0 1rem;
     margin: 0 auto;
+    line-height: 40px;
 }
 
 .help_conteiner{
@@ -21,25 +22,21 @@
     align-items: center;
     flex-direction: column;
     row-gap: 2rem;
-}
 
-.help_conteiner i{
-    display: inline-block;
-	text-shadow: 0 0 10px #222,1px 1px  0 #450505;
-	color: red;
-
-	animation: beat 1s infinite;
-	transform-origin: center;
+    i{
+        display: inline-block;
+        text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+        color: red;
+    
+        animation: beat 1s infinite;
+        transform-origin: center;
+    }
 }
 
 @keyframes beat {
     from { transform: none; }
     50% { transform: scale(1.4); }
     to { transform: none; }
-}
-
-.form{
-    line-height: 40px;
 }
 
 .field_form{

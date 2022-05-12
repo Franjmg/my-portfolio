@@ -7,6 +7,7 @@
 }
 
 .home_conteiner{
+    @extend .grid;
     position: relative;
     padding-top: 4rem;
     row-gap: 3rem;
