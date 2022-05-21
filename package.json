@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "This is my personal portfolio, I'm building it with a lot of love.",
   "main": "main.js",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/Franjmg/my-portfolio.git"
   },
-  "author": "",
+  "author": "Francisco",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Franjmg/my-portfolio/issues"
