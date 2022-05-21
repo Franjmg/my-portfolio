@@ -206,7 +206,7 @@ header {
   margin-bottom: 1rem;
 }
 
-span {
+.span_title {
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
@@ -431,55 +431,157 @@ span {
 }
 
 .form {
-  padding: 0 1rem;
-  margin: 0 auto;
+  width: 90%;
+  padding: 2rem 1rem;
+  margin: 0 auto 4rem;
   line-height: 40px;
+  text-align: center;
+  backdrop-filter: blur(8px) saturate(177%);
+  -webkit-backdrop-filter: blur(8px) saturate(177%);
+  background-color: rgba(17, 25, 40, 0.14);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-.help_conteiner {
-  padding: 4rem 1rem 2rem;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  row-gap: 2rem;
-}
-.help_conteiner i {
-  display: inline-block;
-  text-shadow: 0 0 10px #222, 1px 1px 0 #450505;
-  color: red;
-  animation: beat 1s infinite;
-  transform-origin: center;
+.input-container {
+  width: 100%;
+  position: relative;
 }
 
-@keyframes beat {
-  from {
-    transform: none;
-  }
-  50% {
-    transform: scale(1.4);
-  }
-  to {
-    transform: none;
-  }
+.label {
+  position: absolute;
+  height: 6px;
+  left: 10px;
+  top: 5px;
+  transition: all 0.2s;
+  padding: 0 2px;
+  z-index: 1;
+  color: #b3b3b3;
 }
+.label::before {
+  content: "";
+  height: 8px;
+  background: hsl(219deg, 4%, 7%);
+  position: absolute;
+  left: 0px;
+  top: 14px;
+  width: 100%;
+  z-index: -1;
+}
+
+.text-input {
+  padding: 0.8rem;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #2f2c45;
+  background: hsl(219deg, 4%, 7%);
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  transition: all 0.3s;
+  color: #fff;
+}
+.text-input:focus {
+  border: 2px solid hsl(219deg, 69%, 56%);
+}
+.text-input:focus::placeholder {
+  opacity: 1;
+}
+.text-input::placeholder {
+  font-size: 16px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.text-input:focus + .label, .filled {
+  top: -16px;
+  color: hsl(219deg, 69%, 56%);
+  font-size: 14px;
+}
+
+.mail-img {
+  width: 100%;
+  height: 400px;
+}
+
+.mail-svg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../media/img/mail-sent-animate.svg);
+  background-position: center;
+  background-size: cover;
+}
+
 .field_form {
   font-size: var(--normal-font-size);
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0;
 }
 
 .btn_conteiner {
   display: flex;
   justify-content: flex-end;
-  column-gap: 2rem;
+  margin-top: 1em;
 }
 
+button {
+  font-family: inherit;
+  font-size: 20px;
+  background: hsl(219deg, 4%, 7%);
+  color: white;
+  padding: 4px 2em;
+  padding-left: 1.9em;
+  display: flex;
+  align-items: center;
+  border: 2px solid #2f2c45;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+button .span_btn {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+button:hover {
+  border: 2px solid hsl(219deg, 69%, 56%);
+}
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover .span_btn {
+  transform: translateX(5em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
 /*========== FOOTER ==========*/
 footer {
   width: 100%;
   align-self: flex-end;
   border-radius: 1rem 1rem 0 0;
   background-color: var(--body-color);
+  z-index: 2;
 }
 
 .footer-top {
@@ -498,6 +600,25 @@ footer {
 }
 .social-icons a:hover {
   color: var(--first-color-alt);
+}
+
+.footer {
+  position: relative;
+}
+
+.circle {
+  background-color: hsla(219deg, 33%, 32%, 0.5);
+  filter: blur(112px);
+  border-radius: 50%;
+  width: 15em;
+  height: 15em;
+}
+
+.footer .circle {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+  z-index: -1;
 }
 
 /*========== VARIABLES CSS ==========*/
@@ -557,7 +678,7 @@ footer {
     margin: 0.6em 0;
   }
 
-  span {
+  .span_title {
     margin: 0;
     text-align: left;
   }

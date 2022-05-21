@@ -4,6 +4,7 @@ footer{
     align-self: flex-end;
     border-radius: 1rem 1rem 0 0;
     background-color: var(--body-color);
+    z-index: 2;
 }
 
 .footer-top{
@@ -25,4 +26,21 @@ footer{
     }
 }
 
+.footer{
+    position: relative;
+}
 
+.circle{
+    background-color: hsla(219, 33%, 32%, .5);
+    filter: blur(112px);
+    border-radius: 50%;
+    width: 15em;
+    height: 15em;
+}
+
+.footer .circle{
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    z-index: -1;
+}
