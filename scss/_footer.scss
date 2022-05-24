@@ -1,9 +1,10 @@
+@import 'base/variables.scss';
 /*========== FOOTER ==========*/
 footer{
     width: 100%;
     align-self: flex-end;
     border-radius: 1rem 1rem 0 0;
-    background-color: var(--body-color);
+    background-color: $body-color;
     z-index: 2;
 }
 
@@ -13,16 +14,16 @@ footer{
 
 .footer-bottom{
     padding: 30px 0 20px;
-    border-top: 1px solid var(--first-color-alt);
+    border-top: 1px solid $first-color-alt;
 }
 
 .social-icons a{
     font-size: 24px;
-    color: var(--white-color);
+    color: $white-color;
     padding: 3px;
 
     &:hover{
-        color: var(--first-color-alt);
+        color: $first-color-alt;
     }
 }
 

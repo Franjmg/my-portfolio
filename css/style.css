@@ -10,9 +10,9 @@ html {
 }
 
 body {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  color: var(--text-color);
+  font-family: "Exo", sans-serif;
+  font-size: 0.938rem;
+  color: hsl(219deg, 8%, 75%);
   display: flex;
   flex-wrap: wrap;
   min-height: 100vh;
@@ -23,15 +23,15 @@ body {
 }
 
 h1, h2, h3 {
-  color: var(--title-color);
-  font-weight: var(--font-semi-bold);
+  color: hsl(219deg, 8%, 95%);
+  font-weight: 600;
 }
 
 a {
   text-decoration: none;
   font-weight: 500;
   transition: all 0 ease;
-  color: var(--text-color-light);
+  color: hsl(219deg, 4%, 55%);
 }
 
 img {
@@ -61,7 +61,7 @@ main {
 }
 
 .section_title {
-  font-size: var(--h2-font-size);
+  font-size: 1.25rem;
   text-align: center;
   margin-bottom: 2.5rem;
 }
@@ -93,11 +93,11 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: var(--z-fixed);
+  z-index: 100;
 }
 
 .nav_conteiner {
-  height: var(--header-height);
+  height: 4.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,21 +105,21 @@ header {
 
 .nav_logo,
 .nav_toggle {
-  color: var(--title-color);
+  color: hsl(219deg, 8%, 95%);
   display: inline-flex;
 }
 
 .nav_logo {
   align-items: center;
   column-gap: 0.25rem;
-  font-weight: var(--font-medium);
+  font-weight: 500;
   transition: 0.3s;
 }
 .nav_logo i {
   font-size: 1.25rem;
 }
 .nav_logo:hover {
-  color: var(--first-color);
+  color: hsl(219deg, 69%, 56%);
 }
 
 .nav_toggle {
@@ -149,18 +149,18 @@ header {
 
 .nav_link {
   text-transform: uppercase;
-  color: var(--title-color);
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-medium);
+  color: hsl(219deg, 8%, 95%);
+  font-size: 1.25rem;
+  font-weight: 500;
   transition: 0.3s;
 }
 .nav_link:hover {
-  color: var(--first-color);
+  color: hsl(219deg, 69%, 56%);
 }
 
 .nav_close {
   font-size: 2rem;
-  color: var(--white-color);
+  color: #fff;
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -175,7 +175,7 @@ header {
 /* Change Background header */
 .scroll-header {
   border-radius: 0 0 1rem 1rem;
-  background-color: var(--body-color);
+  background-color: hsl(219deg, 4%, 4%);
 }
 
 /*========== HOME ==========*/
@@ -202,7 +202,7 @@ header {
 }
 
 .home_title {
-  font-size: var(--h1-font-size);
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -227,21 +227,21 @@ header {
   }
 }
 .home_subtitle {
-  font-size: var(--h3-font-size);
+  font-size: 1rem;
   margin-bottom: 0.25rem;
 }
 
 .home_web {
-  font-size: var(--small-font-size);
+  font-size: 0.81rem;
   font-weight: 400;
-  color: var(--text-color);
+  color: hsl(219deg, 8%, 75%);
   display: inline-flex;
   align-items: center;
   column-gap: 0.25rem;
 }
 
 .home_web i {
-  color: var(--first-color);
+  color: hsl(219deg, 69%, 56%);
 }
 
 .home_img {
@@ -319,7 +319,7 @@ header {
 }
 
 .project_card {
-  border-color: var(--white-color);
+  border-color: #fff;
   flex-direction: column;
   row-gap: 0.75rem;
   justify-content: center;
@@ -333,13 +333,13 @@ header {
   outline: none;
   border: 2px solid;
   border-radius: 0.5rem;
-  background-color: var(--body-color);
-  color: var(--first-color-alt);
-  font-weight: var(--font-semi-bold);
+  background-color: hsl(219deg, 4%, 4%);
+  color: hsl(219deg, 69%, 52%);
+  font-weight: 600;
 }
 .btns:hover {
-  background-color: var(--first-color-alt);
-  color: var(--body-color);
+  background-color: hsl(219deg, 69%, 52%);
+  color: hsl(219deg, 4%, 4%);
 }
 
 /*========== ABOUT ME ==========*/
@@ -407,7 +407,7 @@ header {
 
 .link_skill {
   width: 4.5em;
-  background-color: var(--conteiner-color);
+  background-color: hsl(219deg, 4%, 7%);
   border-radius: 0.75em;
 }
 .link_skill:hover {
@@ -416,7 +416,7 @@ header {
 .link_skill i {
   font-size: 40px;
   padding: 0.25em;
-  color: var(--first-color);
+  color: hsl(219deg, 69%, 56%);
 }
 
 /*========== CONTACT ==========*/
@@ -513,7 +513,7 @@ header {
 }
 
 .field_form {
-  font-size: var(--normal-font-size);
+  font-size: 0.938rem;
   padding: 1.5rem 1.5rem 0;
 }
 
@@ -580,7 +580,7 @@ footer {
   width: 100%;
   align-self: flex-end;
   border-radius: 1rem 1rem 0 0;
-  background-color: var(--body-color);
+  background-color: hsl(219deg, 4%, 4%);
   z-index: 2;
 }
 
@@ -590,16 +590,16 @@ footer {
 
 .footer-bottom {
   padding: 30px 0 20px;
-  border-top: 1px solid var(--first-color-alt);
+  border-top: 1px solid hsl(219deg, 69%, 52%);
 }
 
 .social-icons a {
   font-size: 24px;
-  color: var(--white-color);
+  color: #fff;
   padding: 3px;
 }
 .social-icons a:hover {
-  color: var(--first-color-alt);
+  color: hsl(219deg, 69%, 52%);
 }
 
 .footer {
