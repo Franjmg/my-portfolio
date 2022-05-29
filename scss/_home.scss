@@ -28,7 +28,6 @@
     font-size: var(--h1-font-size);
     font-weight: $font-extra-bold;
     margin-bottom: 1rem;
-    text-transform: uppercase;
 }
 
 .home_subtitle{
@@ -37,6 +36,55 @@
     letter-spacing: 2px;
     color: $text-color;
     margin-bottom: .25rem;
+}
+
+.home_links{ 
+    a{
+        font-size: 1.125rem;
+        font-weight: $font-semi-bold;
+    }
+    span{
+        margin-inline: 10px;
+    }
+}
+
+.mouse_body {
+    padding-top: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.mouse {
+    width: 25px;
+    height: 50px;
+    border: 2px solid $conteiner-color;
+    border-radius: 20px;
+    display: flex;
+}
+
+.mouse-wheel {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: $conteiner-color;
+    border-radius: 50%;
+    margin: auto;
+    animation: move-wheel 2s linear infinite;
+}
+
+@keyframes move-wheel {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(1rem);
+    }
 }
 
 .home_web{
@@ -79,6 +127,7 @@
 
 .home_portfolio{
     min-height: 80vh;
+    padding-top: 60px;
 }
 
 .home_cards{
@@ -93,11 +142,16 @@
     margin-bottom: 2em;
     background-color: $color-bg;
 }
-@mixin card_image($img){
+@mixin card_image($color){
     width: 100%;
     height: 280px;
-    background: $img center no-repeat;
-    background-size: cover;
+    text-align: center;
+    background-color: $color;
+
+    img{
+        width: 90%;
+        height: 100%;
+    }
 }
 
 .home_card{
@@ -105,7 +159,7 @@
 }
 
 .card_img{
-    @include card_image(url(../media/img/auhelp.jpg));
+    @include card_image($white-color);
 }
 
 .home_card2{
@@ -116,10 +170,50 @@
 }
 
 .card_img2{
-    @include card_image(url(../media/img/omnilife.jpg))
+    @include card_image(#70309E);
+}
+
+.card_img3{
+    @include card_image($white-color);
 }
 
 .card_content{
     height: 100px;
     padding: 10px 0 0 10px;
 }
+
+.hcard{
+    position: relative;
+
+    .card_bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        visibility: hidden;
+        opacity: 0;
+        background: rgba(15,20,30,.9);
+        transition: opacity .2s linear;
+    }
+
+    .ref{
+        position: absolute;
+        top: 6em;
+        padding-left: 10px;
+        color: $text-color;
+    }
+
+    &:hover > .card_bg{
+        opacity: .7;
+        visibility: visible;
+    }
+}
+
+.home_contact{
+    padding-block: 60px;
+}
+
+.home-contact-title{
+    font-size: 2em;
+}
+

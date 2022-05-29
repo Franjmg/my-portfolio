@@ -22,6 +22,16 @@
     --smalller-font-size: .813rem;
   }
 }
+@media screen and (min-width: 1080px) {
+  :root {
+    --h1-font-size: 3.4rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.2rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 0.94rem;
+    --smalller-font-size: .93rem;
+  }
+}
 /*========== VARIABLES CSS ==========*/
 :root {
   /* Typografhy */
@@ -43,6 +53,16 @@
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
     --smalller-font-size: .813rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  :root {
+    --h1-font-size: 3.4rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.2rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 0.94rem;
+    --smalller-font-size: .93rem;
   }
 }
 * {
@@ -157,6 +177,16 @@ main {
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
     --smalller-font-size: .813rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  :root {
+    --h1-font-size: 3.4rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.2rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 0.94rem;
+    --smalller-font-size: .93rem;
   }
 }
 /*========== HEADER & NAV ==========*/
@@ -274,6 +304,16 @@ header {
     --smalller-font-size: .813rem;
   }
 }
+@media screen and (min-width: 1080px) {
+  :root {
+    --h1-font-size: 3.4rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.2rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 0.94rem;
+    --smalller-font-size: .93rem;
+  }
+}
 /*========== HOME ==========*/
 .home {
   width: 100%;
@@ -303,7 +343,6 @@ header {
   font-size: var(--h1-font-size);
   font-weight: 800;
   margin-bottom: 1rem;
-  text-transform: uppercase;
 }
 
 .home_subtitle {
@@ -314,6 +353,51 @@ header {
   margin-bottom: 0.25rem;
 }
 
+.home_links a {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.home_links span {
+  margin-inline: 10px;
+}
+
+.mouse_body {
+  padding-top: 8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.mouse {
+  width: 25px;
+  height: 50px;
+  border: 2px solid hsl(219deg, 4%, 7%);
+  border-radius: 20px;
+  display: flex;
+}
+
+.mouse-wheel {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: hsl(219deg, 4%, 7%);
+  border-radius: 50%;
+  margin: auto;
+  animation: move-wheel 2s linear infinite;
+}
+
+@keyframes move-wheel {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(1rem);
+  }
+}
 .home_web {
   font-size: var(--small-font-size);
   font-weight: 400;
@@ -351,6 +435,7 @@ header {
 
 .home_portfolio {
   min-height: 80vh;
+  padding-top: 60px;
 }
 
 .home_cards {
@@ -368,8 +453,12 @@ header {
 .card_img {
   width: 100%;
   height: 280px;
-  background: url(../media/img/auhelp.jpg) center no-repeat;
-  background-size: cover;
+  text-align: center;
+  background-color: #fff;
+}
+.card_img img {
+  width: 90%;
+  height: 100%;
 }
 
 .home_card2 {
@@ -385,13 +474,60 @@ header {
 .card_img2 {
   width: 100%;
   height: 280px;
-  background: url(../media/img/omnilife.jpg) center no-repeat;
-  background-size: cover;
+  text-align: center;
+  background-color: #70309E;
+}
+.card_img2 img {
+  width: 90%;
+  height: 100%;
+}
+
+.card_img3 {
+  width: 100%;
+  height: 280px;
+  text-align: center;
+  background-color: #fff;
+}
+.card_img3 img {
+  width: 90%;
+  height: 100%;
 }
 
 .card_content {
   height: 100px;
   padding: 10px 0 0 10px;
+}
+
+.hcard {
+  position: relative;
+}
+.hcard .card_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(15, 20, 30, 0.9);
+  transition: opacity 0.2s linear;
+}
+.hcard .ref {
+  position: absolute;
+  top: 6em;
+  padding-left: 10px;
+  color: #878a8f;
+}
+.hcard:hover > .card_bg {
+  opacity: 0.7;
+  visibility: visible;
+}
+
+.home_contact {
+  padding-block: 60px;
+}
+
+.home-contact-title {
+  font-size: 2em;
 }
 
 /*========== VARIABLES CSS ==========*/
@@ -417,17 +553,26 @@ header {
     --smalller-font-size: .813rem;
   }
 }
+@media screen and (min-width: 1080px) {
+  :root {
+    --h1-font-size: 3.4rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.2rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 0.94rem;
+    --smalller-font-size: .93rem;
+  }
+}
 /*========== PROJECTS ==========*/
 .projects_section {
   width: 100%;
   position: relative;
-  padding: 5rem 1.5em 2em;
+  padding: 5rem 1.5em 10em;
 }
 
 .projects {
   width: 90%;
   margin: 0 auto;
-  grid-template-rows: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
 }
@@ -439,7 +584,6 @@ header {
   width: 100%;
   border-radius: 1.5rem;
   overflow: hidden;
-  cursor: pointer;
 }
 .projects figure img {
   width: 100%;
@@ -463,6 +607,11 @@ header {
 .projects figure:hover > .capa {
   opacity: 1;
   visibility: visible;
+}
+
+.capa p {
+  width: 80%;
+  color: #0f141e;
 }
 
 .titlepro, .projects figure .capa {
@@ -514,6 +663,16 @@ header {
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
     --smalller-font-size: .813rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  :root {
+    --h1-font-size: 3.4rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.2rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 0.94rem;
+    --smalller-font-size: .93rem;
   }
 }
 /*========== ABOUT ME ==========*/
@@ -568,6 +727,16 @@ header {
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
     --smalller-font-size: .813rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  :root {
+    --h1-font-size: 3.4rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.2rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 0.94rem;
+    --smalller-font-size: .93rem;
   }
 }
 /*========== SKILLS ==========*/
@@ -637,6 +806,16 @@ header {
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
     --smalller-font-size: .813rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  :root {
+    --h1-font-size: 3.4rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.2rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 0.94rem;
+    --smalller-font-size: .93rem;
   }
 }
 /*========== CONTACT ==========*/
@@ -724,9 +903,6 @@ header {
 .mail-svg {
   width: 100%;
   height: 100%;
-  background-image: url(../media/img/mail-sent-animate.svg);
-  background-position: center;
-  background-size: cover;
 }
 
 .field_form {
@@ -815,6 +991,16 @@ button:active {
     --smalller-font-size: .813rem;
   }
 }
+@media screen and (min-width: 1080px) {
+  :root {
+    --h1-font-size: 3.4rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.2rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 0.94rem;
+    --smalller-font-size: .93rem;
+  }
+}
 /*========== FOOTER ==========*/
 footer {
   width: 100%;
@@ -864,25 +1050,6 @@ footer {
 
 /*========== BREAKPOINT ==========*/
 @media screen and (min-width: 767px) {
-  .section {
-    padding: 7rem 0 2rem;
-  }
-
-  .home_data {
-    width: 100%;
-    text-align: left;
-    margin-left: 1em;
-  }
-  .home_data p {
-    width: 70%;
-    margin: 0.6em 0;
-  }
-
-  .span_title {
-    margin: 0;
-    text-align: left;
-  }
-
   .nav {
     height: 6rem;
   }
@@ -903,6 +1070,23 @@ footer {
     text-transform: initial;
   }
 
+  /* HOME */
+  .home {
+    height: 100vh;
+  }
+
+  .home_data {
+    width: 60%;
+    bottom: 10em;
+  }
+
+  .home_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    padding-bottom: 0;
+  }
+
   .home_conteiner {
     height: 65vh;
     grid-template-columns: 60% 40%;
@@ -916,6 +1100,15 @@ footer {
     border-radius: 50%;
   }
 
+  .mouse_body {
+    visibility: visible;
+  }
+
+  .home_portfolio {
+    padding-top: 120px;
+  }
+
+  /* PORTFOLIO */
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -946,6 +1139,33 @@ footer {
     flex-direction: row;
     column-gap: 2em;
     margin-inline: 1.8em;
+  }
+
+  /* CONTACT */
+  .main_form {
+    flex-direction: row-reverse;
+    padding-block: 6em 5em;
+  }
+
+  .mail-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+  .mail-img .mail-svg {
+    height: 80%;
+    width: 85%;
+  }
+
+  .form {
+    width: 75%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .home_img {
+    width: 380px;
   }
 }
 

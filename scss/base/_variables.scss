@@ -51,3 +51,15 @@ $z-fixed: 100;
         --smalller-font-size: .813rem;
     }
 }
+
+@media screen and (min-width: 1080px){
+    :root{
+        --h1-font-size: 3.4rem;
+        --h2-font-size: 1.75rem;
+        --h3-font-size: 1.2rem;
+        --normal-font-size: 1.2rem;
+        --small-font-size: 0.94rem;
+        --smalller-font-size: .93rem;
+    }
+}
+

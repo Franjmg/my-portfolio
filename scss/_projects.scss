@@ -3,14 +3,13 @@
 .projects_section{
     width: 100%;
     position: relative;
-    padding: 5rem 1.5em 2em;
+    padding: 5rem 1.5em 10em;
 }
 
 .projects{
     width: 90%;
     margin: 0 auto;
     @extend .grid;
-    grid-template-rows: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
 
@@ -23,7 +22,6 @@
         width: 100%;
         border-radius: 1.5rem;
         overflow: hidden;
-        cursor: pointer;
 
         img{
             width: 100%;
@@ -53,7 +51,12 @@
         }
     }  
 }
-
+.capa{
+    p{
+        width: 80%;
+        color: $text-color-light;
+    }
+}
 .titlepro{
     text-align: center;
 }
