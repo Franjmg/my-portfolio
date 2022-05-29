@@ -67,7 +67,7 @@ header{
 .nav_link{
     text-transform: uppercase;
     color: $title-color;
-    font-size: $h2-font-size;
+    font-size: var(--h2-font-size);
     font-weight: $font-medium;
     transition: .3s;
 

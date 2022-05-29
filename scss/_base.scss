@@ -12,15 +12,12 @@ html{
 
 body{
     font-family: $body-font;
-    font-size: $normal-font-size;
+    font-size: var(--normal-font-size);
     color: $text-color;
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
-    background-image: url(../media/img/Meteor.svg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: $body-color;
 }
 
 h1, h2, h3{
@@ -63,7 +60,7 @@ main{
 
 
 .section_title{
-    font-size: $h2-font-size;
+    font-size: var(--h2-font-size);
     text-align: center;
     margin-bottom: 2.5rem;
 }
@@ -73,17 +70,24 @@ main{
 }
 
 .shape{
+    background-color: $first-color;
+    filter: blur(112px);
+    border-radius: 50%;
+    opacity: .2;
+}
+
+.shape2{
     background-color: hsla(219, 33%, 32%, .5);
     filter: blur(112px);
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
 .shape_big{
-    width: 400px;
-    height: 400px;
+    width: 550px;
+    height: 550px;
 }
 
 .shape_small{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 }

@@ -1,4 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&family=Hind:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;800&display=swap");
+/*========== VARIABLES CSS ==========*/
+:root {
+  /* Typografhy */
+  /* .5rem = 8px | 1rem = 16px... */
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: .8rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .81rem;
+  --smalller-font-size: .75rem;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 767px) {
+  :root {
+    --h1-font-size: 2.45rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smalller-font-size: .813rem;
+  }
+}
+/*========== VARIABLES CSS ==========*/
+:root {
+  /* Typografhy */
+  /* .5rem = 8px | 1rem = 16px... */
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: .8rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .81rem;
+  --smalller-font-size: .75rem;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 767px) {
+  :root {
+    --h1-font-size: 2.45rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smalller-font-size: .813rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,19 +57,16 @@ html {
 
 body {
   font-family: "Exo", sans-serif;
-  font-size: 0.938rem;
-  color: hsl(219deg, 8%, 75%);
+  font-size: var(--normal-font-size);
+  color: #878a8f;
   display: flex;
   flex-wrap: wrap;
   min-height: 100vh;
-  background-image: url(../media/img/Meteor.svg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: hsl(219deg, 8%, 95%);
 }
 
 h1, h2, h3 {
-  color: hsl(219deg, 8%, 95%);
+  color: hsl(219deg, 4%, 4%);
   font-weight: 600;
 }
 
@@ -31,7 +74,7 @@ a {
   text-decoration: none;
   font-weight: 500;
   transition: all 0 ease;
-  color: hsl(219deg, 4%, 55%);
+  color: #0f141e;
 }
 
 img {
@@ -50,7 +93,7 @@ main {
   margin-left: 1.5rem;
 }
 
-.grid, .main_skill, .projects, .home_conteiner {
+.grid, .main_skill, .projects {
   display: grid;
   gap: 1.5rem;
   justify-content: center;
@@ -61,7 +104,7 @@ main {
 }
 
 .section_title {
-  font-size: 1.25rem;
+  font-size: var(--h2-font-size);
   text-align: center;
   margin-bottom: 2.5rem;
 }
@@ -71,21 +114,51 @@ main {
 }
 
 .shape {
+  background-color: hsl(219deg, 69%, 56%);
+  filter: blur(112px);
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.shape2 {
   background-color: hsla(219deg, 33%, 32%, 0.5);
   filter: blur(112px);
   border-radius: 50%;
 }
 
 .shape_big {
-  width: 400px;
-  height: 400px;
+  width: 550px;
+  height: 550px;
 }
 
 .shape_small {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
 }
 
+/*========== VARIABLES CSS ==========*/
+:root {
+  /* Typografhy */
+  /* .5rem = 8px | 1rem = 16px... */
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: .8rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .81rem;
+  --smalller-font-size: .75rem;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 767px) {
+  :root {
+    --h1-font-size: 2.45rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smalller-font-size: .813rem;
+  }
+}
 /*========== HEADER & NAV ==========*/
 header {
   width: 100vw;
@@ -105,7 +178,7 @@ header {
 
 .nav_logo,
 .nav_toggle {
-  color: hsl(219deg, 8%, 95%);
+  color: hsl(219deg, 4%, 4%);
   display: inline-flex;
 }
 
@@ -149,8 +222,8 @@ header {
 
 .nav_link {
   text-transform: uppercase;
-  color: hsl(219deg, 8%, 95%);
-  font-size: 1.25rem;
+  color: hsl(219deg, 4%, 4%);
+  font-size: var(--h2-font-size);
   font-weight: 500;
   transition: 0.3s;
 }
@@ -175,66 +248,76 @@ header {
 /* Change Background header */
 .scroll-header {
   border-radius: 0 0 1rem 1rem;
-  background-color: hsl(219deg, 4%, 4%);
+  background-color: hsl(219deg, 8%, 95%);
 }
 
+/*========== VARIABLES CSS ==========*/
+:root {
+  /* Typografhy */
+  /* .5rem = 8px | 1rem = 16px... */
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: .8rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .81rem;
+  --smalller-font-size: .75rem;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 767px) {
+  :root {
+    --h1-font-size: 2.45rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smalller-font-size: .813rem;
+  }
+}
 /*========== HOME ==========*/
 .home {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   position: relative;
   overflow: hidden;
 }
 
 .home_conteiner {
-  position: relative;
+  height: 70%;
   padding-top: 4rem;
   row-gap: 3rem;
 }
 
 .home_data {
   width: 100%;
-  text-align: center;
+  position: absolute;
+  bottom: 1em;
+  z-index: 2;
 }
 .home_data p {
   width: 80%;
-  margin: 0.6em auto;
 }
 
 .home_title {
-  font-size: 1.5rem;
+  width: 90%;
+  font-size: var(--h1-font-size);
+  font-weight: 800;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
-.span_title {
-  display: block;
-  white-space: nowrap;
-  border-right: 4px solid;
-  margin: 0 auto;
-  width: 9ch;
-  animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
-  overflow: hidden;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
 .home_subtitle {
-  font-size: 1rem;
+  font-size: var(--h3-font-size);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #878a8f;
   margin-bottom: 0.25rem;
 }
 
 .home_web {
-  font-size: 0.81rem;
+  font-size: var(--small-font-size);
   font-weight: 400;
-  color: hsl(219deg, 8%, 75%);
+  color: #878a8f;
   display: inline-flex;
   align-items: center;
   column-gap: 0.25rem;
@@ -245,8 +328,9 @@ header {
 }
 
 .home_img {
-  width: 280px;
-  justify-self: center;
+  width: 90%;
+  height: 100%;
+  float: right;
 }
 
 .home .shape_big,
@@ -255,17 +339,84 @@ header {
 }
 
 .home .shape_big {
-  left: -1rem;
-  top: 3rem;
+  left: 5rem;
+  top: -5rem;
   z-index: -1;
 }
-
 .home .shape_small {
   right: -3rem;
-  bottom: 2rem;
+  bottom: 15rem;
   z-index: -1;
 }
 
+.home_portfolio {
+  min-height: 80vh;
+}
+
+.home_cards {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.home_card {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2em;
+  background-color: white;
+}
+
+.card_img {
+  width: 100%;
+  height: 280px;
+  background: url(../media/img/auhelp.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.home_card2 {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2em;
+  background-color: #70309E;
+}
+.home_card2 .card_title {
+  color: #fff;
+}
+
+.card_img2 {
+  width: 100%;
+  height: 280px;
+  background: url(../media/img/omnilife.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.card_content {
+  height: 100px;
+  padding: 10px 0 0 10px;
+}
+
+/*========== VARIABLES CSS ==========*/
+:root {
+  /* Typografhy */
+  /* .5rem = 8px | 1rem = 16px... */
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: .8rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .81rem;
+  --smalller-font-size: .75rem;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 767px) {
+  :root {
+    --h1-font-size: 2.45rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smalller-font-size: .813rem;
+  }
+}
 /*========== PROJECTS ==========*/
 .projects_section {
   width: 100%;
@@ -333,15 +484,38 @@ header {
   outline: none;
   border: 2px solid;
   border-radius: 0.5rem;
-  background-color: hsl(219deg, 4%, 4%);
+  background-color: hsl(219deg, 8%, 95%);
   color: hsl(219deg, 69%, 52%);
   font-weight: 600;
 }
 .btns:hover {
   background-color: hsl(219deg, 69%, 52%);
-  color: hsl(219deg, 4%, 4%);
+  color: hsl(219deg, 8%, 95%);
 }
 
+/*========== VARIABLES CSS ==========*/
+:root {
+  /* Typografhy */
+  /* .5rem = 8px | 1rem = 16px... */
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: .8rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .81rem;
+  --smalller-font-size: .75rem;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 767px) {
+  :root {
+    --h1-font-size: 2.45rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smalller-font-size: .813rem;
+  }
+}
 /*========== ABOUT ME ==========*/
 .about {
   width: 100vw;
@@ -373,6 +547,29 @@ header {
   color: hsl(219deg, 69%, 56%);
 }
 
+/*========== VARIABLES CSS ==========*/
+:root {
+  /* Typografhy */
+  /* .5rem = 8px | 1rem = 16px... */
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: .8rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .81rem;
+  --smalller-font-size: .75rem;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 767px) {
+  :root {
+    --h1-font-size: 2.45rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smalller-font-size: .813rem;
+  }
+}
 /*========== SKILLS ==========*/
 .main_skill {
   width: 100vw;
@@ -419,6 +616,29 @@ header {
   color: hsl(219deg, 69%, 56%);
 }
 
+/*========== VARIABLES CSS ==========*/
+:root {
+  /* Typografhy */
+  /* .5rem = 8px | 1rem = 16px... */
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: .8rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .81rem;
+  --smalller-font-size: .75rem;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 767px) {
+  :root {
+    --h1-font-size: 2.45rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smalller-font-size: .813rem;
+  }
+}
 /*========== CONTACT ==========*/
 .main_form {
   width: 100vw;
@@ -436,11 +656,8 @@ header {
   margin: 0 auto 4rem;
   line-height: 40px;
   text-align: center;
-  backdrop-filter: blur(8px) saturate(177%);
-  -webkit-backdrop-filter: blur(8px) saturate(177%);
-  background-color: rgba(17, 25, 40, 0.14);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
+  border: 1px solid hsl(219deg, 69%, 52%);
 }
 
 .input-container {
@@ -482,7 +699,7 @@ header {
   color: #fff;
 }
 .text-input:focus {
-  border: 2px solid hsl(219deg, 69%, 56%);
+  border: 2px solid hsl(219deg, 69%, 52%);
 }
 .text-input:focus::placeholder {
   opacity: 1;
@@ -495,7 +712,7 @@ header {
 
 .text-input:focus + .label, .filled {
   top: -16px;
-  color: hsl(219deg, 69%, 56%);
+  color: #fff;
   font-size: 14px;
 }
 
@@ -513,7 +730,7 @@ header {
 }
 
 .field_form {
-  font-size: 0.938rem;
+  font-size: var(--normal-font-size);
   padding: 1.5rem 1.5rem 0;
 }
 
@@ -575,12 +792,36 @@ button:active {
     transform: translateY(-0.1em);
   }
 }
+/*========== VARIABLES CSS ==========*/
+:root {
+  /* Typografhy */
+  /* .5rem = 8px | 1rem = 16px... */
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: .8rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .81rem;
+  --smalller-font-size: .75rem;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 767px) {
+  :root {
+    --h1-font-size: 2.45rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smalller-font-size: .813rem;
+  }
+}
 /*========== FOOTER ==========*/
 footer {
   width: 100%;
   align-self: flex-end;
+  border-top: 1px solid hsl(219deg, 69%, 52%);
   border-radius: 1rem 1rem 0 0;
-  background-color: hsl(219deg, 4%, 4%);
+  background-color: hsl(219deg, 8%, 95%);
   z-index: 2;
 }
 
@@ -595,7 +836,7 @@ footer {
 
 .social-icons a {
   font-size: 24px;
-  color: #fff;
+  color: hsl(219deg, 4%, 7%);
   padding: 3px;
 }
 .social-icons a:hover {
@@ -610,58 +851,17 @@ footer {
   background-color: hsla(219deg, 33%, 32%, 0.5);
   filter: blur(112px);
   border-radius: 50%;
-  width: 15em;
-  height: 15em;
+  width: 300px;
+  height: 300px;
 }
 
 .footer .circle {
   position: absolute;
   top: 10%;
-  right: 20%;
+  left: -1em;
   z-index: -1;
 }
 
-/*========== VARIABLES CSS ==========*/
-:root {
-  --header-height: 4.5rem;
-  /* COLORS */
-  /* Color moder HSL(hue, saturation, lightness) */
-  --first-color: hsl(219, 69%, 56%);
-  --first-color-alt: hsl(219, 69%, 52%);
-  --title-color: hsl(219, 8%, 95%);
-  --text-color: hsl(219, 8%, 75%);
-  --text-color-light: hsl(219, 4%, 55%);
-  --white-color: #fff;
-  --body-color: hsl(219, 4%, 4%);
-  --conteiner-color: hsl(219, 4%, 7%);
-  /* Font and typografhy */
-  /* .5rem = 8px | 1rem = 16px... */
-  --body-font: "Exo", sans-serif;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .81rem;
-  --smalller-font-size: .75rem;
-  /* Font weight */
-  --font-medium: 500;
-  --font-semi-bold: 600;
-  /* z index */
-  --z-tooltip: 10;
-  --z-fixed: 100;
-}
-
-/* Responsive typography */
-@media screen and (min-width: 767px) {
-  :root {
-    --h1-font-size: 2.45rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smalller-font-size: .813rem;
-  }
-}
 /*========== BREAKPOINT ==========*/
 @media screen and (min-width: 767px) {
   .section {
@@ -684,7 +884,7 @@ footer {
   }
 
   .nav {
-    height: calc(var(--header-height) + 1.5rem);
+    height: 6rem;
   }
 
   .nav_toggle,
@@ -735,7 +935,7 @@ footer {
   .link_skill i {
     font-size: 60px;
     padding: 0.45em;
-    color: var(--first-color);
+    color: hsl(219deg, 69%, 56%);
   }
 
   .about {

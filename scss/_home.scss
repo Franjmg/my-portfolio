@@ -2,61 +2,45 @@
 /*========== HOME ==========*/
 .home{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     overflow: hidden;
 }
 
 .home_conteiner{
-    @extend .grid;
-    position: relative;
+    height: 70%;
     padding-top: 4rem;
     row-gap: 3rem;
 }
 
 .home_data{
     width: 100%;
-    text-align: center;
-    
+    position: absolute;
+    bottom: 1em;
+    z-index: 2;
     p{
         width: 80%;
-        margin: .6em auto;
     }
 }
 
 .home_title{
-    font-size: $h1-font-size;
+    width: 90%;
+    font-size: var(--h1-font-size);
+    font-weight: $font-extra-bold;
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
-
-.span_title{
-    display: block;
-    white-space: nowrap;
-    border-right: 4px solid;
-    margin: 0 auto;
-    width: 9ch;
-
-    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
-    overflow: hidden;
-}
-
-
-@keyframes typing {
-    from {width: 0}
-}
-
-@keyframes blink {
-    50% {border-color: transparent}
-}
-
 
 .home_subtitle{
-    font-size: $h3-font-size;
+    font-size: var(--h3-font-size);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $text-color;
     margin-bottom: .25rem;
 }
 
 .home_web{
-    font-size: $small-font-size;
+    font-size: var(--small-font-size);
     font-weight: 400;
     color: $text-color;
     display: inline-flex;
@@ -69,8 +53,9 @@
 }
 
 .home_img{
-    width: 280px;
-    justify-self: center;
+    width: 90%;
+    height: 100%;
+    float: right;
 }
 
 .home .shape_big,
@@ -78,14 +63,63 @@
     position: absolute;
 }
 
-.home .shape_big{
-    left: -1rem;
-    top: 3rem;
-    z-index: -1;
+.home{
+    .shape_big{
+        left: 5rem;
+        top: -5rem;
+        z-index: -1;
+    }
+
+    .shape_small{
+        right: -3rem;
+        bottom: 15rem;
+        z-index: -1;
+    }
 }
 
-.home .shape_small{
-    right: -3rem;
-    bottom: 2rem;
-    z-index: -1;
+.home_portfolio{
+    min-height: 80vh;
+}
+
+.home_cards{
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+@mixin card_bg($color-bg){
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2em;
+    background-color: $color-bg;
+}
+@mixin card_image($img){
+    width: 100%;
+    height: 280px;
+    background: $img center no-repeat;
+    background-size: cover;
+}
+
+.home_card{
+    @include card_bg(white)
+}
+
+.card_img{
+    @include card_image(url(../media/img/auhelp.jpg));
+}
+
+.home_card2{
+    @include card_bg(#70309E);
+    .card_title{
+        color: $white-color;
+    }
+}
+
+.card_img2{
+    @include card_image(url(../media/img/omnilife.jpg))
+}
+
+.card_content{
+    height: 100px;
+    padding: 10px 0 0 10px;
 }

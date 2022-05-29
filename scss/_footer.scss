@@ -3,6 +3,7 @@
 footer{
     width: 100%;
     align-self: flex-end;
+    border-top: 1px solid $first-color-alt;
     border-radius: 1rem 1rem 0 0;
     background-color: $body-color;
     z-index: 2;
@@ -19,7 +20,7 @@ footer{
 
 .social-icons a{
     font-size: 24px;
-    color: $white-color;
+    color: $conteiner-color;
     padding: 3px;
 
     &:hover{
@@ -35,13 +36,13 @@ footer{
     background-color: hsla(219, 33%, 32%, .5);
     filter: blur(112px);
     border-radius: 50%;
-    width: 15em;
-    height: 15em;
+    width: 300px;
+    height: 300px;
 }
 
 .footer .circle{
     position: absolute;
     top: 10%;
-    right: 20%;
+    left: -1em;
     z-index: -1;
 }
