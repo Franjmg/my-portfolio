@@ -1,75 +1,109 @@
+@import 'base/variables.scss';
 /*========== HOME ==========*/
 .home{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     overflow: hidden;
 }
 
 .home_conteiner{
-    @extend .grid;
-    position: relative;
+    height: 70%;
     padding-top: 4rem;
     row-gap: 3rem;
 }
 
 .home_data{
     width: 100%;
-    text-align: center;
-    
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
     p{
         width: 80%;
-        margin: .6em auto;
     }
 }
 
 .home_title{
+    width: 90%;
     font-size: var(--h1-font-size);
+    font-weight: $font-extra-bold;
     margin-bottom: 1rem;
 }
 
-.span_title{
-    display: block;
-    white-space: nowrap;
-    border-right: 4px solid;
-    margin: 0 auto;
-    width: 9ch;
-
-    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
-    overflow: hidden;
-}
-
-
-@keyframes typing {
-    from {width: 0}
-}
-
-@keyframes blink {
-    50% {border-color: transparent}
-}
-
-
 .home_subtitle{
     font-size: var(--h3-font-size);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $text-color;
     margin-bottom: .25rem;
+}
+
+.home_links{ 
+    a{
+        font-size: 1.125rem;
+        font-weight: $font-semi-bold;
+    }
+    span{
+        margin-inline: 10px;
+    }
+}
+
+.mouse_body {
+    padding-top: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.mouse {
+    width: 25px;
+    height: 50px;
+    border: 2px solid $conteiner-color;
+    border-radius: 20px;
+    display: flex;
+}
+
+.mouse-wheel {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: $conteiner-color;
+    border-radius: 50%;
+    margin: auto;
+    animation: move-wheel 2s linear infinite;
+}
+
+@keyframes move-wheel {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(1rem);
+    }
 }
 
 .home_web{
     font-size: var(--small-font-size);
     font-weight: 400;
-    color: var(--text-color);
+    color: $text-color;
     display: inline-flex;
     align-items: center;
     column-gap: .25rem;
 }
 
 .home_web i{
-    color: var(--first-color);
+    color: $first-color;
 }
 
 .home_img{
-    width: 280px;
-    justify-self: center;
+    width: 90%;
+    height: 100%;
+    float: right;
 }
 
 .home .shape_big,
@@ -77,14 +111,109 @@
     position: absolute;
 }
 
-.home .shape_big{
-    left: -1rem;
-    top: 3rem;
-    z-index: -1;
+.home{
+    .shape_big{
+        left: 5rem;
+        top: -5rem;
+        z-index: -1;
+    }
+
+    .shape_small{
+        right: -3rem;
+        bottom: 14rem;
+        z-index: -1;
+    }
 }
 
-.home .shape_small{
-    right: -3rem;
-    bottom: 2rem;
-    z-index: -1;
+.home_portfolio{
+    min-height: 80vh;
+    padding-top: 60px;
 }
+
+.home_cards{
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+@mixin card_bg($color-bg){
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2em;
+    background-color: $color-bg;
+}
+@mixin card_image($color){
+    width: 100%;
+    height: 280px;
+    text-align: center;
+    background-color: $color;
+
+    img{
+        width: 90%;
+        height: 100%;
+    }
+}
+
+.home_card{
+    @include card_bg(white)
+}
+
+.card_img{
+    @include card_image($white-color);
+}
+
+.home_card2{
+    @include card_bg(#70309E);
+    .card_title{
+        color: $white-color;
+    }
+}
+
+.card_img2{
+    @include card_image(#70309E);
+}
+
+.card_img3{
+    @include card_image($white-color);
+}
+
+.card_content{
+    height: 100px;
+    padding: 10px 0 0 10px;
+}
+
+.hcard{
+    position: relative;
+
+    .card_bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        visibility: hidden;
+        opacity: 0;
+        background: rgba(15,20,30,.9);
+        transition: opacity .2s linear;
+    }
+
+    .ref{
+        position: absolute;
+        top: 6em;
+        padding-left: 10px;
+        color: $text-color;
+    }
+
+    &:hover > .card_bg{
+        opacity: .7;
+        visibility: visible;
+    }
+}
+
+.home_contact{
+    padding-block: 60px;
+}
+
+.home-contact-title{
+    font-size: 2em;
+}
+

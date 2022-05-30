@@ -1,3 +1,4 @@
+@import 'base/variables.scss';
 /*========== HEADER & NAV ==========*/
 
 header{
@@ -6,11 +7,11 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: var(--z-fixed);
+    z-index: $z-fixed;
 }
 
 .nav_conteiner{
-    height: var(--header-height);
+    height: $header-height;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -18,14 +19,14 @@ header{
 
 .nav_logo,
 .nav_toggle{
-    color: var(--title-color);
+    color: $title-color;
     display: inline-flex;
 }
 
 .nav_logo{
     align-items: center;
     column-gap: .25rem;
-    font-weight: var(--font-medium);
+    font-weight: $font-medium;
     transition: .3s;
 
     i{
@@ -33,7 +34,7 @@ header{
     }
 
     &:hover{
-        color: var(--first-color);
+        color: $first-color;
     }
 }
 
@@ -65,19 +66,19 @@ header{
 
 .nav_link{
     text-transform: uppercase;
-    color: var(--title-color);
+    color: $title-color;
     font-size: var(--h2-font-size);
-    font-weight: var(--font-medium);
+    font-weight: $font-medium;
     transition: .3s;
 
     &:hover{
-        color: var(--first-color);
+        color: $first-color;
     }
 }
 
 .nav_close{
     font-size: 2rem;
-    color: var(--white-color);
+    color: $white-color;
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -92,5 +93,5 @@ header{
 /* Change Background header */
 .scroll-header{
     border-radius: 0 0 1rem 1rem;
-    background-color: var(--body-color);
+    background-color: $body-color;
 }

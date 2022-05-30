@@ -16,11 +16,8 @@
     margin: 0 auto 4rem;
     line-height: 40px;
     text-align: center;
-    backdrop-filter: blur(8px) saturate(177%);
-    -webkit-backdrop-filter: blur(8px) saturate(177%);
-    background-color: rgba(17, 25, 40, 0.14);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125); 
+    border: 1px solid $first-color-alt;
 }
 
 .input-container{
@@ -63,7 +60,7 @@
     color: #fff;
 
     &:focus{
-        border: 2px solid $first-color;
+        border: 2px solid $first-color-alt;
 
         &::placeholder{
             opacity: 1;
@@ -79,7 +76,7 @@
 
 .text-input:focus + .label, .filled{
     top: -16px;
-    color: $first-color;
+    color: $white-color;
     font-size: 14px;
 }
 
@@ -91,9 +88,6 @@
 .mail-svg{
     width: 100%;
     height: 100%;
-    background-image: url(../media/img/mail-sent-animate.svg);
-    background-position: center;
-    background-size: cover;
 }
 
 .field_form{

@@ -1,15 +1,15 @@
+@import 'base/variables.scss';
 /*========== PROJECTS ==========*/
 .projects_section{
     width: 100%;
     position: relative;
-    padding: 5rem 1.5em 2em;
+    padding: 5rem 1.5em 10em;
 }
 
 .projects{
     width: 90%;
     margin: 0 auto;
     @extend .grid;
-    grid-template-rows: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
 
@@ -22,7 +22,6 @@
         width: 100%;
         border-radius: 1.5rem;
         overflow: hidden;
-        cursor: pointer;
 
         img{
             width: 100%;
@@ -52,13 +51,18 @@
         }
     }  
 }
-
+.capa{
+    p{
+        width: 80%;
+        color: $text-color-light;
+    }
+}
 .titlepro{
     text-align: center;
 }
 
 .project_card{
-    border-color: var(--white-color);
+    border-color: $white-color;
     flex-direction: column;
     row-gap: .75rem;
     justify-content: center;
@@ -72,13 +76,13 @@
     outline: none;
     border: 2px solid;
     border-radius: .5rem;
-    background-color: var(--body-color);
-    color: var(--first-color-alt);
-    font-weight: var(--font-semi-bold);
+    background-color: $body-color;
+    color: $first-color-alt;
+    font-weight: $font-semi-bold;
 
     &:hover{
-        background-color: var(--first-color-alt);
-        color: var(--body-color);
+        background-color: $first-color-alt;
+        color: $body-color;
     }
 }
 
