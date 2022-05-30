@@ -331,7 +331,7 @@ header {
 .home_data {
   width: 100%;
   position: absolute;
-  bottom: 1em;
+  bottom: 0;
   z-index: 2;
 }
 .home_data p {
@@ -429,7 +429,7 @@ header {
 }
 .home .shape_small {
   right: -3rem;
-  bottom: 15rem;
+  bottom: 14rem;
   z-index: -1;
 }
 
