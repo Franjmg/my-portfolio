@@ -95,14 +95,23 @@
         }
     }
 
-    .about{
-        height: 90vh;
+    /* ABOUT ME */
+    .carousel{
+        width: 450px;
+        height: 670px;
+        margin: 0 auto;
     }
 
-    .aboutme{
-        flex-direction: row;
-        column-gap: 2em;
-        margin-inline: 1.8em;
+    .about_container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 1em;
+        padding-block: 2em 3em;
+        
+        p{
+            width: 40%;
+        }
     }
 
      /* CONTACT */
@@ -134,6 +143,5 @@
     .home_img{
         width: 380px;
     }
-
    
 }

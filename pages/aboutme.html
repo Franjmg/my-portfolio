@@ -7,7 +7,6 @@
     <meta name="description" content="Este es el sitio web Fran donde podras conocer todo acerca de mi sobre Desarrollador Web, desde mis proyectos, como habilidades hasta como contactarme">
     <meta name="keywords"  content="WEB, DEVELOPER, SOFTWARE, HABILIDADES, PROYECTOS, HTML, CSS, JAVASCRIPT, BOOTSTRAP, FRANCISCO">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../media/img/logo.png">
@@ -41,35 +40,40 @@
         </nav>
     </header>
     <main class="main_about">
-        <section class="about" id="home">
-            <h2>About me</h2>
-            <div class="aboutme animate__animated animate__backInUp">
-                <div class="me">
-                    <h2>Code</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Natus perferendis tenetur modi, doloremque laboriosam impedit.
-                    </p>
-                    <i class="fa-solid fa-code"></i>
+        <section class="about container" id="home">
+            <h2 class="home_subtitle">a few about me</h2>
+            <h1 class="home_title">I am Francisco Gutiérrez, a developer and designer who focuses on telling the stories of my clients, through enjoyable and meaningful experiences. I excel at making responsive websites and functional user interfaces.</h2>
+            <div class="about_container">
+              <p>I'm web Developer and Software Enginner Student at National University of Jujuy and CoderHouse. <br> I am also passionate about music, I know how to play the guitar and the charango. <br> Team cats! I have two cats the youngest white is called simba and the overo is tiny</p>
+              
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
-                <div class="me">
-                    <h2>Graduation</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Natus perferendis tenetur modi, doloremque laboriosam impedit.
-                    </p>
-                    <i class="fa-solid fa-graduation-cap"></i>
+                <div class="carousel-inner">
+                  <<div class="carousel-item active">
+                    <img src="../media/img/fran2.png" class="d-block" alt="FRAN WEB DEVELOPER">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../media/img/fran1.jpg" class="d-block" alt="FRAN WEB DEVELOPER">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../media/img/simba.jpg" class="d-block" alt="CAT">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../media/img/chiqui.jpg" class="d-block" alt="CAT">
+                  </div>
                 </div>
-                <div class="me" id="map">
-                    <!-- <h2>Me</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Natus perferendis tenetur modi, doloremque laboriosam impedit.
-                    </p>
-                    <i class="fa-solid fa-child"></i> -->
-                </div>
+            </div>
             </div>
         </section>
     </main>
     <!--=========== FOOTER ===========-->
     <footer>
+      <div class="footer">
         <div class="footer-top" data-aos="fade-right">
             <div class="container">
               <div class="row justify-content-between gy-5">
@@ -78,31 +82,29 @@
                         <i class="fa-solid fa-code"></i>
                         Fran
                     </a>
-                    <p>Hi! Welcome to my web portfolio! My name is Francisco Gutierrez, I'm web Developer and Software Enginner Student at Unju.</p>
+                  <p>Hi! Welcome to my web portfolio! My name is Francisco Gutierrez, I'm web Developer and Software Enginner Student at Unju.</p>
                   <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/franjmg/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Franjmg" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/franciscoojmg/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                   </div>
                 </div>
                 <div class="col-md-2">
                   <h4 class="title-sm">Navigation</h4>
                   <div class="footer-links d-flex flex-column">
                     <a href="../index.html">Home</a>
-                    <a href="./projects.html">Portfolio</a>
-                    <a href="./aboutme.html">About Me</a>
-                    <a href="./skills.html">Skills</a>
-                    <a href="./contact.html">Contact me</a>
+                    <a href="../pages/projects.html">Portfolio</a>
+                    <a href="../pages/aboutme.html">About Me</a>
+                    <a href="../pages/skills.html">Skills</a>
+                    <a href="../pages/contact.html">Contact me</a>
                   </div>
                 </div>
                 <div class="col-md-2">
-                  <h4 class="title-sm">More</h4>
+                  <h4 class="title-sm">Social</h4>
                   <div class="footer-links d-flex flex-column">
-                    <a href="#">FAQ's</a>
-                    <a href="#">Liscenses</a>
-                    <a href="#">Privacy and Policy</a>
+                    <a href="https://github.com/Franjmg" target="_blank">Github</a>
+                    <a href="https://www.linkedin.com/in/franjmg/" target="_blank">Linkedin</a>
+                    <a href="https://www.instagram.com/franciscoojmg/" target="_blank">Instagram</a>
                   </div>
                 </div>
                 <div class="col-md-3">
@@ -115,19 +117,21 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="footer-bottom">
-            <div class="container">
-              <div class="row justify-content-between gy-3">
-                <div class="col-md-6">
-                  <p class="mb-0">@Copyright2022</p>
-                </div>
-                <div class="col-auto">
-                  <p class="mb-0">Design by Francisco Gutiereez</p>
-                </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row justify-content-between gy-3">
+              <div class="col-md-6">
+                <p class="mb-0">@Copyright2022</p>
+              </div>
+              <div class="col-auto">
+                <p class="mb-0">Design by Francisco Gutierrez</p>
               </div>
             </div>
           </div>
+        </div>
+        <div class="circle"></div>
+      </div class="footer">
     </footer>
     <!-- SCRIPTS -->
     <script src="../main.js"></script>

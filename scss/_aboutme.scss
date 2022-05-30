@@ -3,32 +3,36 @@
 .about{
     width: 100vw;
     padding-top: 7rem;
-    text-align: center;
+    min-height: 100vh;
 }
 
-.aboutme{
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: 2em;
-    justify-content: center;
+.about{
+    h1{
+        width: 100%;
+        font-size: 2.125rem;
+        padding-top: 10px;
+        line-height: 2.25rem;
+    }
 }
 
-.me{
-    line-height: 40px;
-    padding-inline: 2rem;
+.about_container{
+    padding-block: 1em 2em;
+}
+
+.carousel{
+    padding-block: 1em 3em;
+}
+
+.carousel-item{
+    filter: grayscale(1);
 
     &:hover{
-        transform: scale(1.2,1.2);
+        filter: grayscale(0);
+        transition-property: filter;
+        transition: 200ms all ease-in; 
     }
-    
-    p{
-        padding: 1.5em;
-        color: $white-color;
-    }
+}
 
-    i{
-        font-size: 2em;
-        color: $first-color;
-    }
+.carousel-indicators [data-bs-target] {
+    background-color: $conteiner-color;
 }
